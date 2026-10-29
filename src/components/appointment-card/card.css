@@ -1,0 +1,13 @@
+/* Always add this at the global level (not inside component style) */
+@media (max-width: 768px) {
+  .custom-appointment-modal .ant-modal-content {
+    padding: 6px !important;
+    scrollbar-width:'none' !important;
+  }
+}
+
+/* @media (min-width: 769px) {
+  .custom-appointment-modal .ant-modal-content {
+    padding: 0 !important;
+  }
+} */

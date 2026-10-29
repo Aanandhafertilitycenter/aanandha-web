@@ -1,0 +1,36 @@
+/* Default: mobile first */
+.responsive-avatar {
+  width: 200px;
+  height: 200px;
+  border: 8px solid white;
+  border-radius: 50%;
+  background-color: transparent;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  aspect-ratio: 1 / 1;
+}
+
+/* Medium (md) */
+@media (min-width: 768px) {
+  .responsive-avatar {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+/* Large (lg) */
+@media (min-width: 992px) {
+  .responsive-avatar {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+/* Extra Large (xl) */
+@media (min-width: 1200px) {
+  .responsive-avatar {
+    width: 450px;
+    height: 450px;
+  }
+}

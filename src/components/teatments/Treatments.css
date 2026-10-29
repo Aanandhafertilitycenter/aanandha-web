@@ -1,0 +1,40 @@
+.treatment-card {
+  height: 110px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  position: relative;
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, #1E88E5 0%, #00ACC1 100%);
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 0.6s ease-out;
+}
+
+.treatment-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Slide-in animation when in view */
+.treatment-card.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+@media (max-width: 768px) {
+  .treatment-card {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .treatment-card .ant-avatar {
+    position: static !important;
+    margin-bottom: 12px;
+  }
+}
